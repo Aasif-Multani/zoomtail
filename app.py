@@ -45,7 +45,8 @@ def cleanUpSentence(r, stop_words = None):
     else:
         return r
 
-
+new_model = load_model("classification_model.h5")
+		
 @app.route('/', methods=['GET'])
 def classification():
 	print("Please Enter some input")		
@@ -54,10 +55,8 @@ def classification():
 	input = cleanUpSentence(input_sen, stop_words)
 	textArray = np.array(pad_sequences(input_tokenizer.texts_to_sequences([input]), maxlen=maxLength))
 	print("Loading Model from Disk")
-	new_model = load_model("classification_model.h5")
 	print("Predicting Categories")
 	predicted = new_model.predict(textArray)[0]
-
 	print("Given News Article belong to following Categories")
 	for i, prob in enumerate(predicted):
 		if prob > 0.2:
