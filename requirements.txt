@@ -43,8 +43,6 @@ Markdown==2.6.11
 MarkupSafe==1.0
 matplotlib==2.2.2
 mistune==0.8.3
-mkl-fft==1.0.0
-mkl-random==1.0.1
 nbconvert==5.4.1
 nbformat==4.4.0
 nltk==3.4.1
@@ -61,7 +59,7 @@ Pygments==2.3.1
 pyreadline==2.1
 python-dateutil==2.7.3
 pytz==2018.4
-pywinpty==0.5.5
+pywinpty=
 PyYAML==3.12
 pyzmq==17.1.2
 qtconsole==4.4.3
