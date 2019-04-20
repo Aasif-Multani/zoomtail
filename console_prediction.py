@@ -1,3 +1,7 @@
+import os
+os.environ['KERAS_BACKEND'] = 'tensorflow'
+
+
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
