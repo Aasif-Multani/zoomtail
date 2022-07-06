@@ -37,7 +37,7 @@ jupyter-core==4.4.0
 kafka-python==1.4.3
 Keras==2.1.5
 kiwisolver==1.0.1
-lxml==4.3.3
+lxml==4.9.1
 mako==1.0.7
 Markdown==2.6.11
 MarkupSafe==1.0
